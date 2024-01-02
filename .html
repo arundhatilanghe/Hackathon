@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Sliding Background</title> 
+	<style> 
+		.wrapper { 
+			overflow: hidden; 
+		} 
+
+		.sliding-background { 
+			background: url( 
+"D:\Hackathon\heroimage2.jpg") 
+			repeat-x; 
+			height: 961px; 
+			width: 6000px; 
+			animation: slide 60s linear infinite; 
+		} 
+
+		@keyframes slide { 
+			0% { 
+				transform: translate3d(0, 0, 0); 
+			} 
+
+			100% { 
+				transform: translate3d(-2000px, 0, 0); 
+			} 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="wrapper"> 
+		<div class="sliding-background"></div> 
+	</div> 
+</body> 
+
+</html> 
